@@ -4,14 +4,17 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body{
     min-height: 100vh;
-    background: linear-gradient(#2b1055,#7597DE);
+    /* background: linear-gradient(#2b1055,#7597DE); */
+    
+    background: url('Stars.jpg');
 }
 header{
-     position: sticky; 
+     position: fixed; 
     top: 0;
     left:0;
     width: 100%;
@@ -20,6 +23,8 @@ header{
     justify-content: space-between;
     align-items: center;
     z-index: 10000;
+    background: linear-gradient(transparent);
+    
 }
 .fixed-content {
     top: 0;
@@ -86,6 +91,7 @@ section img{
     height:150px;
     box-shadow:0 0 60px 30px #fff,0 0 140px 90px #0ff;
     border-radius: 100px;
+    margin-top: 62px;
 }
 #Mountain{
     width:auto;
@@ -115,6 +121,42 @@ section img{
     font-size: 1.5em;
     z-index: 1000;
     transform: translateY(-100px);
+    margin-top: 450px;
+    margin-left: 614px;
 }
+
+#zerminate{
+    width: 200px;
+    background: cadetblue;
+    border-radius: 90px;
+}
+.container{
+    position: relative;
+    padding: 100px;
+    background: #1c0522;
+}
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height:100px;
+    background: linear-gradient(to top,#1c0522,#fff,transparent);
+}
+.container h2{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.container p{
+    font-size: 1em;
+    color:#fff;
+}
+#stars{
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
 
 

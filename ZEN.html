@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Title</title>
+    <title>zerminate INC</title>
     <link rel="stylesheet" type="text/css" href="zenStyle.css">
 </head>
-<body>
+<body >
+    
     <header id="fixed-content">
-    <a href="#" class="logo">logo</a>
+    <a href="#" class="logo"><img src="zerminatelogo.png" id="zerminate" ></a>
     <ul>
         <li><a href="#" class="active">Home</a></li>
         <li><a href="#">About</a></li>
@@ -15,15 +16,15 @@
     </ul>
     </header>
     <section style="overflow: hidden;">
-        <img src="Stars.jpg" id="star">
+        <img src="Stars.jpg" id="stars">
         <div id="moonDIV"><img src="full-moon.png" id="moon"></div>
         <div id="himalDIV"><img src="himal.png" id="Mountain"></div>
-        <!-- <h2 id="text">WEBsite designed by Sigman Koirala.</h2> -->
-        <button href="#" class="btn">Explwasdasdore</button>
+        <h2 id="text">WEBsite designed by Sigman Koirala.</h2> 
+        <a href="#sec" id="btn">Explore</a>
         <img src="picture.png" id="rock">
 
     </section>
-    <div class="container">
+    <div class="container" id="sec">
         <h2>WEBsite design for zerminate.</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -40,6 +41,23 @@
         <br>
         </p>
     </div>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let Mountain = document.getElementById('Mountain');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let rock = document.getElementById('rock');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            Mountain.style.top = value * 0.5 + 'px';
+            rock.style.left = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+    })
+    </script>
 
         
         
