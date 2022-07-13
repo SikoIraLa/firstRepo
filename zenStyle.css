@@ -2,9 +2,10 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing:border-box;
     font-family: 'poppins', sans-serif;
     scroll-behavior: smooth;
+    
 }
 
 body{
@@ -134,9 +135,12 @@ section img{
 }
 .container{
     position: relative;
-    padding: 100px;
+    
     background: #1c0522;
     color: white;
+}
+.abt{
+    padding: 100px;
 }
 section::before{
     content: '';
@@ -248,5 +252,64 @@ section::before{
 #service{
     background:#e2d1cb ;
     width: 100%;
+
    
+}
+.port{
+    color: rgb(22, 97, 27);
+    padding: 100px;
+    background-image:url("cream.jpg");
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.toogle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toogle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+@media(max-width: 400px) {
+    .toogle-button{
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none; 
+        width: 100%;
+    }
+
+    .fixed{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links li{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .navbar-links li a{
+        padding: .5rem 1rem;
+    }
+}
+service::before{
+    background: linear-gradient(to top,pink,#fff,transparent);
+
+}
+.foot{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(82, 75, 75);
 }
